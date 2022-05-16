@@ -1,4 +1,3 @@
-import axios from "axios"
 import { useEffect, useState } from "react";
 import './PromptResponse.scss'
 
@@ -6,6 +5,7 @@ export default function PromptResponse() {
 
     const [prompt, setPrompt] = useState("")
     const [responseHistory, setResponseHistory] = useState([])
+    const [val, setVal] = useState();
 
 
 
@@ -55,19 +55,18 @@ export default function PromptResponse() {
                 })               
                 });
         }
+
+        setPrompt("")
     }
 
-    const newArray = responseHistory.reverse()
-    
-
-
-
+ 
     return (
         <main className = "promptResponse">
+            <h1 className = "pageTitle">Prompt Bot</h1>
             <section className = "prompt">
                 <form className = "prompt__form" onSubmit = {handleSubmit}>
-                    <textarea id = "promptInput" name = "promptInput" className = "prompt__input" placeholder = "provide the write-bot with a prompt!" value={prompt} onChange={(e) => setPrompt(e.target.value)}></textarea>
-                    <button className = "prompt__button">submit</button>
+                    <textarea id = "promptInput" name = "promptInput" className = "prompt__input" placeholder = "Provide prompt bot with a prompt!" value={prompt} onChange={(e) => setPrompt(e.target.value)}></textarea>
+                    <button className = "prompt__button">SUBMIT</button>
                 </form>
             </section>
             <section className = "responses">

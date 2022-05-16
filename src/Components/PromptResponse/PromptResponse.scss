@@ -2,7 +2,84 @@
 @use '../../partials/screenSizes' as *;
 @use '../../partials/fonts' as *;
 
+body {
+    background-color: $surface;
+}
+
+.pageTitle {
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+    color: $onsurface;
+}
+
+.prompt {
+    width: 100vw;
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0 1rem 0;
+    }
+
+    &__input {
+        width: 80%;
+        height: 25vw;
+        margin: .5rem;
+        padding: .2rem;
+        border: 1px solid $secondary;
+        border-radius: 0.3125rem;
+        resize: none;
+        white-space: nowrap;
+        overflow-x: wrap;
+    }
+
+    &__input:focus {
+        outline: none;
+        border: 1px solid $focus;
+    }
+
+    &__button {
+        background-color: $primary;
+        color: white;
+        border: none;
+        border-radius: 0.35rem;
+        box-shadow: none;
+        width: 35%;
+        height: 2rem;
+        font-weight: 500;
+    }
+
+    &__button:hover,
+    &__button:active {
+        color: rgb(21, 106, 45);
+    }
+
+}
+
 .responses {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.responseBox{
+    width: 91%;
+    height: 10rem;
+    background-color: $secondary;
+    margin: .5rem 0;
+    padding: .5rem;
+
+    &__title,
+    h3 {
+        margin: 0;
+    }
+
+    &__text,
+    p {
+        margin-top: .2rem;
+    }
 }
