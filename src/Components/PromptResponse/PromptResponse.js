@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
+import './PromptResponse.scss'
 
 export default function PromptResponse() {
 
@@ -56,7 +57,7 @@ export default function PromptResponse() {
         }
     }
 
-    
+    const newArray = responseHistory.reverse()
     
 
 

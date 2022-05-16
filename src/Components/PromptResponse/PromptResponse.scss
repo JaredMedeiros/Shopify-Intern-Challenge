@@ -1,0 +1,8 @@
+@use '../../partials/colors' as *;
+@use '../../partials/screenSizes' as *;
+@use '../../partials/fonts' as *;
+
+.responses {
+    display: flex;
+    flex-direction: column-reverse;
+}
