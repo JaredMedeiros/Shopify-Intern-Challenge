@@ -1,6 +1,6 @@
 # Hi! I'm Jared Medeiros, and this is my react application for Shopify's front-end internship challenge.
 
-You can find a live version of this application here - 
+You can find a live version of this application here - https://628453eddb22dd0dea16cc86--responsebot.netlify.app/
 
 ## About my application
 
