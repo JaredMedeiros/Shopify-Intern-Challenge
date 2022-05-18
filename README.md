@@ -16,6 +16,6 @@ I am looking for my foothold in tech as a career developer. I know without a dou
 
 I am grateful to have been able to take part in this internship challenge, and would love to connect with you to discuss potential opportunites. Please find some links below were you can reach out and view more of my work!
 
-My LinkedIn - https://www.linkedin.com/in/jaredmedeiros/
-More of my work - https://bookclub.studio/
+My LinkedIn - https://www.linkedin.com/in/jaredmedeiros/ <br/>
+More of my work - https://bookclub.studio/ <br/>
 My email address - jaredpmedeiros@gmail.com
