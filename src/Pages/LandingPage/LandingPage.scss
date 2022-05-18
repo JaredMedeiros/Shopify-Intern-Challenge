@@ -1,0 +1,71 @@
+@use '../../partials/colors' as *;
+@use '../../partials/screenSizes' as *;
+@use '../../partials/fonts' as *;
+
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: $surface;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.landingPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    background-color: white;
+    padding: 1.5rem;
+    border: 3px solid $primary;
+    border-radius: 15px;
+    margin: 0;
+    box-shadow: 0 4px 16px 0 rgba(#000000, .3);
+
+    @include desktop {
+        width: 90%;
+    }
+
+    &__title {
+        text-align: center;
+        color: $onsurface;
+        font-size: 3rem;
+        margin: .2rem;
+
+        @include tablet {
+            font-size: 4.25rem;
+        }
+    }
+
+    &__nav {
+        color: white;
+        background-color: $primary;
+        font-size: 1.5rem;
+        margin: 3rem;
+        padding: .8rem 3rem;
+        font-weight: 400;
+        border-radius: 5px;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__nav:hover,
+    &__nav:active {
+        background-color: rgb(6, 71, 6);
+        color: white;
+        cursor: pointer;
+    }
+}

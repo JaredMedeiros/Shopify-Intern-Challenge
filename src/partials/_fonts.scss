@@ -11,6 +11,29 @@ html {
 
 h1 {
   font-size: 3rem;
+
+  @include tablet {
+    font-size: 4.5rem;
+  }
+
+  @include desktop {
+    font-size: 6.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  @include tablet {
+    font-size: 1.25rem;
+  }
 }
   
 button,

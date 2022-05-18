@@ -2,8 +2,14 @@
 @use '../../partials/screenSizes' as *;
 @use '../../partials/fonts' as *;
 
-body {
+html,
+body,
+.promptResponse {
     background-color: $surface;
+    height: 100vh;
+    overscroll-behavior-y: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .pageTitle {
@@ -15,6 +21,11 @@ body {
 
 .prompt {
     width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 
     &__form {
@@ -22,6 +33,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 2rem 0 1rem 0;
+        width: 100%;
     }
 
     &__input {
@@ -29,14 +41,64 @@ body {
         height: 25vw;
         margin: .5rem;
         padding: .2rem;
-        border: 1px solid $secondary;
+        border: 2px solid $primary;
         border-radius: 0.3125rem;
         resize: none;
         white-space: nowrap;
         overflow-x: wrap;
+        box-shadow: 0 4px 16px 0 rgba(#000000, .12);
+
+        @include tablet {
+            font-size: 1.2rem;
+            padding: .5rem;
+        }
+
+        @include desktop {
+            width: 65%;
+            height: 15rem;
+        }
     }
 
     &__input:focus {
+        outline: none;
+        border: 2px solid $focus;
+    }
+
+    &__cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+
+        @include tablet {
+            width: 80%;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+        
+        @include desktop {
+            width: 65%;
+        }
+    }
+
+    &__select {
+        border: 1px solid $secondary;
+        height: 2rem;
+        width: 80%;
+        font-size: 1rem;
+        padding: .2rem;
+        margin: .5rem;
+        box-shadow: 0 4px 16px 0 rgba(#000000, .12);
+
+        @include tablet {
+            width: 77%;
+            height: 2.5rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__select:focus {
         outline: none;
         border: 1px solid $focus;
     }
@@ -47,14 +109,24 @@ body {
         border: none;
         border-radius: 0.35rem;
         box-shadow: none;
-        width: 35%;
+        width: 80%;
         height: 2rem;
         font-weight: 500;
+        text-decoration: none;
+        margin: .5rem;
+        box-shadow: 0 4px 16px 0 rgba(#000000, .12);
+
+        @include tablet {
+            width: 23%;
+            height: 2.5rem;
+            font-size: 1.2rem;
+        }
     }
 
     &__button:hover,
     &__button:active {
-        color: rgb(21, 106, 45);
+        background-color: rgb(21, 106, 45);
+        text-decoration: none;
     }
 
 }
@@ -64,22 +136,80 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     overflow-y: scroll;
+    height: auto;
+    // max-height: 23rem;
 }
 
-.responseBox{
-    width: 91%;
+.responseBox {
+    width: 80%;
     height: 10rem;
-    background-color: $secondary;
+    background-color: white;
+    // border: 2px solid $primary;
+    box-shadow: 0 4px 16px 0 rgba(#000000, .12);
     margin: .5rem 0;
-    padding: .5rem;
-
-    &__title,
-    h3 {
-        margin: 0;
-    }
+    padding: .2rem 1rem;
+    overflow-y: scroll;
 
     &__text,
     p {
         margin-top: .2rem;
     }
 }
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: $primary;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    align-self: center;
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+
