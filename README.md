@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Hi! I'm Jared Medeiros, and this is my react application for Shopify's front-end internship challenge.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can find a live version of this application here - 
 
-## Available Scripts
+## About my application
 
-In the project directory, you can run:
+This application, Response Bot, was built using React and SASS. It utilizes OpenAI's GPT-3 Ai model. The user types in and submits a prompt for the Ai, or chooses a predefined prompt if they are unsure of where to start. This then makes a post request to the OpenAI API, and returns a response based upon the user's prompt. The user is able to view a list of responses, with the corresponding prompts, in a list from newest to oldest request.
 
-### `npm start`
+## About me!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+My name is Jared and I am a passionate, dedicated developer, eager for new opportunities, and hungry for growth. With a background predominatelty in design and e-commerce photo production, I made the decision this year to attend BrainStation's intensive Fullstack Web Developing bootcamp, after a long period of feeling unchallenged and disatisfied with my professional trajectory. In seeking creative stimulation and intellectual growth, I begin to explore the world of code, and found myself immeditaley wrapped up in curiosity and dedication.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I am looking for my foothold in tech as a career developer. I know without a doubt that my technical knowledge, capacity for learning, and unwaivering drive will cary me far if given the opportunity. 
 
-### `npm test`
+### Reach out!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I am grateful to have been able to take part in this internship challenge, and would love to connect with you to discuss potential opportunites. Please find some links below were you can reach out and view more of my work!
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+My LinkedIn - https://www.linkedin.com/in/jaredmedeiros/
+More of my work - https://bookclub.studio/
+My email address - jaredpmedeiros@gmail.com
